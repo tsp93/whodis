@@ -1,18 +1,21 @@
 @import './config.scss';
 
-.App {
-  text-align: center;
+.app {
+  
+  @if $dark-theme {
+    background-color: $color-dark-theme;
+    color: $color-dark-theme-font;
+  } @else {
+    background-color: $color-light-theme;
+    color: $color-light-theme-font;
+  }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
+.frontpage-header {
   background-attachment: scroll;
   background-image: url(laptop.jpg);
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   height: 100vh;
   width: 100%;
@@ -24,4 +27,58 @@
 
   font-size: calc(10px + 2vmin);
   color: $color-font-header;
+
+  & hr {
+    margin: 1rem 2rem;
+  }
+
+}
+
+.info {
+  display: flex;
+  flex-flow: column;
+
+  margin: 2rem auto;
+  width: 75%;
+
+  & h2 {
+    color: $color-font-info-header;
+    margin-bottom: 1rem;
+  }
+
+  & hr {
+    margin: 3rem 20%;
+  }
+
+  @media (min-width: $max-width) {
+    width: 45%;
+  }
+}
+
+.frontpage-footer {
+  background-color: $color-footer;
+  text-align: center;
+  
+  padding: 3rem 0 2rem 0;
+
+  & .contact-details {
+    margin: 2rem auto;
+    width: 30%;
+
+    & .email {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+    }
+
+    & .phone {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 1000px) {
+      width: 70%;
+    }
+  }
 }

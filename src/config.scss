@@ -1,10 +1,17 @@
-$max-width: 1400px;
+$max-width: 1200px;
 
 $font-main: 'Open Sans', helvetica, arial, sans-serif;
 $font-heading: 'Noto Serif', georgia, serif;
 
-$color-font: #222;
+$dark-theme: true;
+
+$color-light-theme: #f5f5f8;
+$color-dark-theme: #080c0f;
+
+$color-light-theme-font: #222;
+$color-dark-theme-font: #fff;
 $color-font-header: #fff;
-$color-background: #eee;
+$color-font-info-header: #22A39F;
+$color-footer: #141313;
 
 $transition: 250ms ease-in-out;
