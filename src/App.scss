@@ -13,7 +13,10 @@
 
 .frontpage-header {
   background-attachment: scroll;
-  background-image: url(laptop.jpg);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ), url(laptop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 

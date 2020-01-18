@@ -19,14 +19,7 @@ function App() {
       <div className="info">
         <div className="about">
           <h1>Um mig</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet dignissim augue quis laoreet. 
-          Ut et dui non massa elementum tristique. In consequat at nisl molestie tempus. 
-          Integer vitae vulputate neque. Fusce et tortor commodo urna dignissim rutrum ut tristique ipsum. Maecenas vulputate, 
-          odio id iaculis posuere, arcu massa placerat arcu, non pretium nisi turpis gravida magna. Orci varius natoque penatibus 
-          et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut scelerisque elit, nec sollicitudin neque. Curabitur 
-          posuere euismod ipsum, rhoncus eleifend orci dapibus at. Pellentesque fringilla quis velit ut viverra. Suspendisse 
-          pulvinar massa quis nunc cursus maximus. Curabitur vestibulum malesuada arcu, in sodales eros sodales at. Nunc magna 
-          tellus, interdum faucibus leo sed, commodo vestibulum lacus. Aliquam sed elit id nulla mattis ornare rhoncus vel ex.</p>
+          <p></p>
           <hr/>
         </div>
         <div className="education">
