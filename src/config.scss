@@ -1,4 +1,6 @@
 $max-width: 1200px;
+$semi-max-width: 1000px;
+$tablet-width: 800px;
 
 $font-main: 'Open Sans', helvetica, arial, sans-serif;
 $font-heading: 'Noto Serif', georgia, serif;
@@ -10,8 +12,15 @@ $color-dark-theme: #080c0f;
 
 $color-light-theme-font: #222;
 $color-dark-theme-font: #fff;
+
 $color-font-header: #fff;
 $color-font-info-header: #22A39F;
+$color-font-category-header: #1f9591;
+
 $color-footer: #141313;
+
+$color-star-default: grey;
+$color-star-filled: #22A39F;
+$color-star-background-hover: #0e151a;
 
 $transition: 250ms ease-in-out;

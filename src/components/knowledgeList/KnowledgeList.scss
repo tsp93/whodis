@@ -1,0 +1,26 @@
+@import '../../config.scss';
+
+.know-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  margin: 0 0 2rem 0;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.know-column {
+  display: flex;
+  flex-flow: column;
+
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+  }
+}
+
+.category-title {
+  color: $color-font-category-header;
+}

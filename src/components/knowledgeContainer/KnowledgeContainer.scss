@@ -1,0 +1,32 @@
+@import '../../config.scss';
+
+.know-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  padding: 0.3rem 0;
+  width: 100%;
+
+  .starSpan {
+    margin-left: 0.1rem;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $color-star-background-hover;
+
+    & .starSpan {
+      margin-left: 0.3rem;
+    }
+  }
+
+  & .star {
+    color: $color-star-default;
+    opacity: 0.6;
+
+    &-filled {
+      color: $color-star-filled;
+    }
+  }
+}

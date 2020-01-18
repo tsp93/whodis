@@ -1,14 +1,14 @@
 @import '../../config.scss';
 
 
-.item-container {
+.edu-container {
   display: flex;
   flex-flow: row wrap;
 
   margin: 1.5rem 0;
 
   & .left-side {
-    & .itemYears {
+    & .eduYears {
       padding: 0.5rem 0 0.5rem 0;
     }
 
@@ -18,7 +18,7 @@
   }
 
   & .right-side {
-    & .itemInfo {
+    & .eduInfo {
       padding: 0.5rem 0 0.5rem 0;
     }
     
