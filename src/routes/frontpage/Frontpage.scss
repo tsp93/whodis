@@ -1,0 +1,128 @@
+@import '../../config.scss';
+
+/* The styles for the header on the frontpage */
+.frontpage-header {
+  background-attachment: scroll;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2), 
+    rgba(0, 0, 0, 0.2)
+  ), url(laptop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: calc(10px + 2vmin);
+  color: $color-font-header;
+
+  & hr {
+    margin: 1rem 2rem;
+  }
+
+  /* The style for the arrowbox in the header */
+  & .scroll-down {
+    background-color: $color-background-navbar;
+    border-radius: 0.2rem 0.2rem 0 0;
+
+    display: flex;
+    justify-content: center;
+
+    height: 10%;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+
+    /* The style for the animated arrow in the header */
+    & .arrow-down {
+      animation: arrowAnimation 0.5s infinite ease;
+      animation-direction: alternate-reverse;
+      
+      color: $color-dark-theme-font;
+      padding-top: 2rem;
+    }
+
+    /* The arrow animation in the header */
+    @keyframes arrowAnimation {
+      0% {
+        padding-top: 1.6rem;
+      } 100% {
+        padding-top: 2.4rem;
+      }
+    }
+
+    @media (min-width: $max-width) {
+      background-color: $color-dark-theme;
+      width: 10%;
+    }
+  }
+
+}
+
+/* The styles for the information portion of the frontpage*/
+.info {
+  display: flex;
+  flex-flow: column;
+
+  margin: 6rem auto;
+  width: 75%;
+
+  & h1 {
+    color: $color-font-info-header;
+    margin-bottom: 2rem;
+  }
+
+  & hr {
+    margin: 3rem 20%;
+  }
+
+  @media (min-width: $max-width) {
+    width: 45%;
+  }
+}
+
+
+/* The styles for the footer of the frontpage */
+.frontpage-footer {
+  background-color: $color-background-footer;
+  text-align: center;
+  
+  padding: 3rem 0 2rem 0;
+
+  & .contact-details {
+    margin: 2rem auto;
+    width: 40%;
+
+    & .links {
+      display: flex;
+      flex-flow: row;
+
+      justify-content: space-between;
+
+      a {
+        color: $color-dark-theme-font;
+        text-decoration: none;
+        
+        text-align: center;
+        opacity: 0.6;
+
+        padding: 0.5rem 0;
+      
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (max-width: $semi-max-width) {
+      width: 70%;
+    }
+  }
+}

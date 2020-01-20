@@ -1,6 +1,6 @@
 $max-width: 1200px;
 $semi-max-width: 1000px;
-$tablet-width: 800px;
+$mobile-width: 768px;
 
 $font-main: 'Open Sans', helvetica, arial, sans-serif;
 $font-heading: 'Noto Serif', georgia, serif;
@@ -17,7 +17,8 @@ $color-font-header: #fff;
 $color-font-info-header: #22A39F;
 $color-font-category-header: #1f9591;
 
-$color-footer: #141313;
+$color-background-navbar: #260330;
+$color-background-footer: #141313;
 
 $color-star-default: grey;
 $color-star-filled: #22A39F;

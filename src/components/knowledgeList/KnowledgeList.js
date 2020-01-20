@@ -15,13 +15,13 @@ export default function KnowledgeList(props) {
   const knowledgeArray = [
     ["Java", 5, 1], ["C++", 4, 1], ["C", 3, 1], ["Python", 4, 1],
     ["HTML5", 5, 1], ["CSS", 5, 1], ["SASS", 4, 1], ["JSX", 4, 1],
-    ["EJS", 5, 1], ["React", 4, 1], ["Node.js", 4, 1], ["Babel", 4, 1],
+    ["EJS", 5, 1], ["React", 4, 1], ["Node.js", 4, 1], ["Babel", 4, 1], ["npm", 4, 1],
     ["ES6", 4, 1], ["Typescript", 3, 1], ["Express.js", 3, 1], ["JSON", 4, 1],
     ["MySQL", 4, 1], ["PostgreSQL", 4, 1], ["Scheme", 2, 1], ["Haskell", 1, 1],
     ["OpenGL", 2, 1], ["WebGL", 3, 1], ["LaTeX", 5, 2], ["Android Studio", 3, 2],
     ["IntelliJ IDEA", 4, 2], ["Matlab", 3, 2], ["Git", 5, 2], ["VSCode", 5, 2],
     ["Atom", 5, 2],
-    ["Íslenska(Föðurtunga)", 5, 3], ["Enska(Móðurtunga)", 5, 3], ["Danska(Skóladanska)", 3, 3], ["Þýska(Ein bisschen)", 1, 3],
+    ["Íslenska (Föðurtunga)", 5, 3], ["Enska (Móðurtunga)", 5, 3], ["Danska (Skóladanska)", 3, 3], ["Þýska (Ein bisschen)", 1, 3],
   ];
 
   // A function to sort the knowledgeArray by rating so the highest rating is at the top
@@ -33,6 +33,7 @@ export default function KnowledgeList(props) {
     }
   }
 
+  // A function to prepare a category so it appears properly in two halves and in order
   function prepCategory(knowledgeArray) {
     const preppedArray = knowledgeArray.filter((know) => know[2] === categoryNumber).sort(sortByRating);
     const index = Math.ceil(preppedArray.length/2);

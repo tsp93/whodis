@@ -1,1 +1,123 @@
 @import '../../config.scss';
+
+// The style for the navigation bar
+.navbar {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+
+  padding: 1rem 0;
+  width: 100%;
+
+  background-color: $color-background-navbar;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+  }
+
+  // The style for the button that collapses the menu
+  & .navbutton {
+    border-width: 1px;
+    border-radius: 0.75rem;
+
+    background-color: $color-background-navbar;
+    color: $color-dark-theme-font;
+
+    margin-left: 80%;
+
+    height: 3rem;
+    width: 3rem;
+
+    @media (min-width: $mobile-width) {
+      margin-left: 90%;
+    }
+  }
+
+  // The style for the multiple navlinks
+  & .navcontent {
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
+
+    animation: animateMenu 0.4s;
+    animation-direction: alternate;
+
+    &.collapsed {
+      display: none;
+    }
+
+    @keyframes animateMenu {
+      0% {
+        height: 0;
+      } 100% {
+        height: 14rem;
+      }
+    }
+
+    // The styles for the navigation links
+    & .navlink {
+      color: $color-dark-theme-font;
+      font-size: 1.2rem;
+
+      padding: 1rem 0;
+      width: 100%;
+
+      text-align: center;
+      text-decoration: none;
+
+      &.filled {
+        background-color: $color-star-filled;
+      }
+  
+      &:hover {
+        opacity: 0.6;
+      }
+
+      animation: animateLink 0.2s both;
+      animation-direction: alternate;
+      transition: 1s ease;
+
+      &:nth-child(1) {animation-delay: 0.0s; }
+      &:nth-child(2) {animation-delay: 0.1s; }
+      &:nth-child(3) {animation-delay: 0.2s; }
+      &:nth-child(4) {animation-delay: 0.3s; }
+
+      @keyframes animateLink {
+        0% {
+          opacity: 0;
+        } 100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // Desktop version
+  @media (min-width: $max-width) {
+    border-radius: 3px;
+
+    margin-left: 80%;
+    padding: 0;
+
+    height: fit-content;
+    width: 10%;
+
+    &.sticky {
+      top: 6rem;
+      width: 10%;
+    }
+
+    & .navbutton {
+      display: none;
+    }
+
+    & .navcontent {
+
+      &.collapsed {
+        display: flex;
+      }
+    }
+  }
+}
