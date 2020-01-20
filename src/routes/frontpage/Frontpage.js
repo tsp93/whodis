@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
+
 import { FaChevronDown } from 'react-icons/fa';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
@@ -15,16 +16,16 @@ import './Frontpage.scss';
 export default function Frontpage() {
 
   function getAge() {
-    var today = new Date();
-    var birthDate = new Date("06/12/1993");
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
+    const today = new Date();
+    const birthDate = new Date("06/12/1993");
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age = age - 1;
+      age = age - 1;
     }
 
     return age;
-}
+  }
  
   return (
     <Fragment>
@@ -45,7 +46,9 @@ export default function Frontpage() {
         <ScrollableAnchor  id={'about'}>
           <div className="about">
             <h1>Um mig</h1>
-              <p>Thomas Samúel Pálsson heiti ég og er {getAge()} ára gamall.</p>
+              <p>Thomas Samúel Pálsson heiti ég, útskrifaður nemandi úr HÍ þar sem ég hlaut B.Sc. gráðu í hugbúnaðarverkfræði. 
+                Ég er {getAge()} ára að aldri, dugnaðardrengur, frábær, æðislegur og umfram allt hógvær. Áhugasamur um margs konar
+                forritun, jafnframt fram- og bakendaforritun, og tilbúinn í allt. Ég á það til að aðlagast nýjum hlutum frekar fljótt.</p>
             <hr/>
           </div>
         </ScrollableAnchor>

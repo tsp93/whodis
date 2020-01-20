@@ -1,6 +1,6 @@
 @import '../../config.scss';
 
-/* The styles for the header on the frontpage */
+// The styles for the header on the frontpage 
 .frontpage-header {
   background-attachment: scroll;
   background: linear-gradient(
@@ -26,7 +26,7 @@
     margin: 1rem 2rem;
   }
 
-  /* The style for the arrowbox in the header */
+  // The style for the arrowbox in the header
   & .scroll-down {
     background-color: $color-background-navbar;
     border-radius: 0.2rem 0.2rem 0 0;
@@ -40,7 +40,7 @@
     position: absolute;
     bottom: 0;
 
-    /* The style for the animated arrow in the header */
+    // The style for the animated arrow in the header
     & .arrow-down {
       animation: arrowAnimation 0.5s infinite ease;
       animation-direction: alternate-reverse;
@@ -49,7 +49,7 @@
       padding-top: 2rem;
     }
 
-    /* The arrow animation in the header */
+    // The arrow animation in the header
     @keyframes arrowAnimation {
       0% {
         padding-top: 1.6rem;
@@ -66,7 +66,7 @@
 
 }
 
-/* The styles for the information portion of the frontpage*/
+// The styles for the information portion of the frontpage
 .info {
   display: flex;
   flex-flow: column;
@@ -83,13 +83,17 @@
     margin: 3rem 20%;
   }
 
+  & .about {
+    text-align: justify;
+  }
+
   @media (min-width: $max-width) {
     width: 45%;
   }
 }
 
 
-/* The styles for the footer of the frontpage */
+// The styles for the footer of the frontpage
 .frontpage-footer {
   background-color: $color-background-footer;
   text-align: center;
