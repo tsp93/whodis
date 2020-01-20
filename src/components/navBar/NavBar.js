@@ -29,14 +29,18 @@ export default function NavBar(props) {
     } else {
       setSticky(false);
     }
-    if (window.location.hash === "") {
-      setHash('');
-    }
+    handleHash();
   }
 
   // Handles the location hash change
   function handleHash() {
-    setHash(window.location.hash.slice(1));
+    if (window.location.hash === "") {
+      setHash('');
+    } else if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+      setHash('contact');
+    } else {
+      setHash(window.location.hash.slice(1));
+    }
   }
 
   // Collapses the drop down menu
