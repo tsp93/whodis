@@ -102,11 +102,11 @@
     padding: 0;
 
     height: fit-content;
-    width: 10%;
+    width: 10rem;
 
     &.sticky {
       top: 6rem;
-      width: 10%;
+      width: 10rem;
     }
 
     & .navbutton {
@@ -118,6 +118,10 @@
       & .navlink {
         animation: none;
         transition: none;
+
+        font-size: 1rem;
+
+        padding: 2rem;
       }
 
       &.collapsed {
