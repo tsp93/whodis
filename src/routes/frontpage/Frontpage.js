@@ -13,6 +13,18 @@ import './Frontpage.scss';
 
 // The frontpage where the resumé resides
 export default function Frontpage() {
+
+  function getAge() {
+    var today = new Date();
+    var birthDate = new Date("06/12/1993");
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age = age - 1;
+    }
+
+    return age;
+}
  
   return (
     <Fragment>
@@ -20,7 +32,7 @@ export default function Frontpage() {
       <header className="frontpage-header">
         <h1>Thomas Samúel Pálsson <hr/></h1>
         <h2>Ferilskrá</h2>
-        <a href="#about" className="scroll-down" onClick={() => {(window.innerWidth <= 768) ? configureAnchors({offset: -100, scrollDuration: 10}) : configureAnchors({offset: -20, scrollDuration: 10});}}>
+        <a href="#about" className="scroll-down" onClick={() => {(window.innerWidth <= 1200) ? configureAnchors({offset: -100, scrollDuration: 10}) : configureAnchors({offset: -20, scrollDuration: 10});}}>
           <span className={'arrow-down'}>
             <FaChevronDown />
           </span>
@@ -33,7 +45,7 @@ export default function Frontpage() {
         <ScrollableAnchor  id={'about'}>
           <div className="about">
             <h1>Um mig</h1>
-            <p></p>
+              <p>Thomas Samúel Pálsson heiti ég og er {getAge()} ára gamall.</p>
             <hr/>
           </div>
         </ScrollableAnchor>

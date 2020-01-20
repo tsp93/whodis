@@ -46,7 +46,7 @@ export default function NavBar(props) {
   // Collapses the drop down menu
   function collapseMenu() {
     setCollapsed(!collapsed);
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1200) {
       configureAnchors({offset: -100, scrollDuration: 10});
     } else {
       configureAnchors({offset: -20, scrollDuration: 10});

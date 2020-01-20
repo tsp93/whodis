@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
 
-    height: 10%;
+    height: 6rem;
     width: 100%;
 
     position: absolute;
@@ -60,7 +60,7 @@
 
     @media (min-width: $max-width) {
       background-color: $color-dark-theme;
-      width: 10%;
+      width: 12rem;
     }
   }
 
