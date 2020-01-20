@@ -4,7 +4,7 @@ import { configureAnchors } from 'react-scrollable-anchor';
 
 import './NavBar.scss';
 
-configureAnchors({offset: -20, scrollDuration: 10});
+configureAnchors({offset: -100, scrollDuration: 10});
 
 // A navigation bar for the frontpage
 export default function NavBar(props) {

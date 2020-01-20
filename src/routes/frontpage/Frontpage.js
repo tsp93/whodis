@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import { FaChevronDown } from 'react-icons/fa';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { configureAnchors } from 'react-scrollable-anchor';
 
 import NavBar from '../../components/navBar/NavBar';
 import EducationContainer from '../../components/educationContainer/EducationContainer';
@@ -19,7 +20,7 @@ export default function Frontpage() {
       <header className="frontpage-header">
         <h1>Thomas Samúel Pálsson <hr/></h1>
         <h2>Ferilskrá</h2>
-        <a href="#about" className="scroll-down">
+        <a href="#about" className="scroll-down" onClick={() => {(window.innerWidth <= 768) ? configureAnchors({offset: -100, scrollDuration: 10}) : configureAnchors({offset: -20, scrollDuration: 10});}}>
           <span className={'arrow-down'}>
             <FaChevronDown />
           </span>
