@@ -11,7 +11,7 @@ export default function NavBar(props) {
   const {chapters} = props;
   const [collapsed, setCollapsed] = useState(true);
   const [sticky, setSticky] = useState(false);
-  const [hash, setHash] = useState('about');
+  const [hash, setHash] = useState('');
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -28,6 +28,9 @@ export default function NavBar(props) {
       setSticky(true);
     } else {
       setSticky(false);
+    }
+    if (window.location.hash === "") {
+      setHash('');
     }
   }
 

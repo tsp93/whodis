@@ -115,6 +115,11 @@
 
     & .navcontent {
 
+      & .navlink {
+        animation: none;
+        transition: none;
+      }
+
       &.collapsed {
         display: flex;
       }
