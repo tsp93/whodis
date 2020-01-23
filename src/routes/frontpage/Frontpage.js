@@ -12,6 +12,8 @@ import ProjectContainer from '../../components/projectContainer/ProjectContainer
 import ContactDetail from '../../components/contactDetail/ContactDetail';
 
 import vefforritunarbudin from '../../images/vefforritunarbudin.JPG';
+import pacalot from '../../images/Pacalot.png';
+import breakout from '../../images/breakout.JPG';
 
 import './Frontpage.scss';
 
@@ -100,6 +102,20 @@ export default function Frontpage() {
               altText={'An online shopping system'}
               captionTitle={'Vefforritunarbúðin'}
               caption={'Hópverkefni í vefforritun'}
+            />
+            <ProjectContainer
+              hyperref={'https://notendur.hi.is/~tsp3/tolvuleikjaforritun/PacSnake/'}
+              image={pacalot}
+              altText={'A hybrid between Pacman and Snake'}
+              captionTitle={'PacSnake'}
+              caption={'Hópverkefni í tölvuleikjaforritun'}
+            />
+            <ProjectContainer
+              hyperref={'https://notendur.hi.is/~tsp3/tolvuleikjaforritun/breakout/'}
+              image={breakout}
+              altText={'The classic game Breakout'}
+              captionTitle={'Breakout'}
+              caption={'Einstaklingsverkefni í tölvuleikjaforritun'}
             />
           </div>
         </ScrollableAnchor>

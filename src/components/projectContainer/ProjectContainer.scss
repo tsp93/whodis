@@ -2,13 +2,15 @@
 
 .project {
 
+  padding: 1rem;
+  width: 100%;
+
   & .projectImg {
     background-color: #18a367;
 
     overflow: hidden;
 
     position: relative;
-    width: 100%;
 
     & a {
       color: $color-dark-theme-font;
@@ -74,8 +76,6 @@
 
   @media (min-width: $semi-max-width) {
 
-    & .projectImg {
-      width: 50%;
-    }
+    width: 50%;
   }
 }
