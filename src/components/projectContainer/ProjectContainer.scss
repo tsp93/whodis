@@ -1,0 +1,81 @@
+@import '../../config.scss';
+
+.project {
+
+  & .projectImg {
+    background-color: #18a367;
+
+    overflow: hidden;
+
+    position: relative;
+    width: 100%;
+
+    & a {
+      color: $color-dark-theme-font;
+      text-decoration: none;
+    }
+
+    & img {
+      object-fit: cover;
+      vertical-align: middle;
+
+      height: 18rem;
+      width: 110%;
+
+      transform: translate3d(-20px,0,0);
+    }
+
+    & h2 {
+      opacity: 0;
+
+      transition: transform 0.35s;
+      transform: translate3d(-50px,0,0);
+    }
+
+    & p {
+      padding: 0.5em 2em;
+      opacity: 0;
+      transform: translate3d(50px,0,0);
+    }
+
+    & img, h2, p, hr {
+	    transition: opacity 0.35s, transform 0.35s;
+    }
+
+    & figcaption {
+      padding: 22% 20%;
+      position: absolute;
+      top: 0;
+
+      & hr {
+        margin: 0;
+        opacity: 0;
+
+        transform: translate3d(-10px,0,0);
+      }
+    }
+
+    &:hover {
+      & img {
+        opacity: 0.6;
+        transform: translate3d(0,0,0);
+      }
+
+      & h2, p, hr {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+
+      & img, h2, p, hr {
+        transition-delay: 0.15s;
+      }
+    }
+  }
+
+  @media (min-width: $semi-max-width) {
+
+    & .projectImg {
+      width: 50%;
+    }
+  }
+}

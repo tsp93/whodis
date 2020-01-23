@@ -6,7 +6,7 @@
   background: linear-gradient(
     rgba(0, 0, 0, 0.2), 
     rgba(0, 0, 0, 0.2)
-  ), url(laptop.jpg);
+  ), url(../../images/laptop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -98,7 +98,8 @@
   background-color: $color-background-footer;
   text-align: center;
   
-  padding: 3rem 0 2rem 0;
+  margin: 25rem 0 0 0;
+  padding: 5rem 0 2rem 0;
 
   & .contact-details {
     margin: 2rem auto;
@@ -114,7 +115,6 @@
         color: $color-dark-theme-font;
         text-decoration: none;
         
-        text-align: center;
         opacity: 0.6;
 
         padding: 1rem 0;
@@ -122,6 +122,15 @@
         &:hover {
           opacity: 1;
         }
+      }
+
+      & .linkedIn {
+        color: #0077b5;
+        font-size: 3rem;
+      }
+
+      & .github {
+        font-size: 3rem;
       }
     }
 

@@ -1,14 +1,17 @@
 import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown, FaLinkedin, FaGithub } from 'react-icons/fa';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 
 import NavBar from '../../components/navBar/NavBar';
 import EducationContainer from '../../components/educationContainer/EducationContainer';
 import KnowledgeList from '../../components/knowledgeList/KnowledgeList';
+import ProjectContainer from '../../components/projectContainer/ProjectContainer';
 import ContactDetail from '../../components/contactDetail/ContactDetail';
+
+import vefforritunarbudin from '../../images/vefforritunarbudin.JPG';
 
 import './Frontpage.scss';
 
@@ -40,7 +43,7 @@ export default function Frontpage() {
         </a>
       </header>
       <NavBar 
-        chapters={[['about', 'Um mig'], ['education', 'Menntun'], ['knowledge', 'Kunnátta'], ['contact', 'Hafa samband']]}
+        chapters={[['about', 'Um mig'], ['education', 'Menntun'], ['knowledge', 'Kunnátta'], ['projects', 'Verkefni'], ['contact', 'Hafa samband']]}
       />
       <div className="info">
         <ScrollableAnchor  id={'about'}>
@@ -75,15 +78,28 @@ export default function Frontpage() {
             <h1>Kunnátta</h1>
             <KnowledgeList
               categoryNumber={1}
-              categoryName={"Forritunarkunnátta"}
+              categoryName={'Forritunarkunnátta'}
             />
             <KnowledgeList
               categoryNumber={2}
-              categoryName={"Tæknikunnátta"}
+              categoryName={'Tæknikunnátta'}
             />
             <KnowledgeList
               categoryNumber={3}
-              categoryName={"Tungumál"}
+              categoryName={'Tungumál'}
+            />
+            <hr/>
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor  id={'projects'}>
+          <div className="projects">
+            <h1>Verkefni</h1>
+            <ProjectContainer
+              hyperref={'https://vef2-h2-mak78-tsp3-pab14.herokuapp.com/'}
+              image={vefforritunarbudin}
+              altText={'An online shopping system'}
+              captionTitle={'Vefforritunarbúðin'}
+              caption={'Hópverkefni í vefforritun'}
             />
           </div>
         </ScrollableAnchor>
@@ -101,8 +117,12 @@ export default function Frontpage() {
               details={'(+354) 858 7793'}
             />
             <div className="links">
-              <a href="https://www.linkedin.com/in/thomas-p%C3%A1lsson-0159b6153/">LinkedIn</a>
-              <a href="https://github.com/tsp93">Github</a>
+              <a href="https://www.linkedin.com/in/thomas-p%C3%A1lsson-0159b6153/">
+                <FaLinkedin className="linkedIn"/>
+              </a>
+              <a href="https://github.com/tsp93">
+                <FaGithub className="github"/>
+              </a>
             </div>
           </div>
         </footer>
