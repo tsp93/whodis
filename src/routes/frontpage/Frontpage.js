@@ -101,7 +101,7 @@ export default function Frontpage() {
               image={vefforritunarbudin}
               altText={'An online shopping system'}
               captionTitle={'Vefforritunarbúðin'}
-              caption={'Hópverkefni í vefforritun'}
+              caption={'Hópverkefni í vefforritun (Gæti tekið ca. mínútu að hlaðast inn)'}
             />
             <ProjectContainer
               hyperref={'https://notendur.hi.is/~tsp3/tolvuleikjaforritun/PacSnake/'}
