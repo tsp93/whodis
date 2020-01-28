@@ -2,7 +2,7 @@ import React from 'react';
 
 import './ProjectContainer.scss';
 
-// 
+// A small container for a project on the frontpage
 export default function ProjectContainer(props) {
   const { hyperref, image, altText, captionTitle, caption } = props;
 

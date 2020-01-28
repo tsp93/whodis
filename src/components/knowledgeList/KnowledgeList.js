@@ -13,15 +13,15 @@ export default function KnowledgeList(props) {
   // the 2nd a rating out of 5 pertaining to how confident I am with the stuff and 
   // the 3rd the category the stuff belongs to, f.x. 1 is programming knowledge and 3 language knowledge
   const knowledgeArray = [
-    ["Java", 5, 1], ["C++", 4, 1], ["C", 3, 1], ["Python", 4, 1],
-    ["HTML5", 5, 1], ["CSS", 5, 1], ["SASS", 4, 1], ["JSX", 4, 1], ["REST API", 5, 1],
-    ["EJS", 5, 1], ["React", 4, 1], ["Node.js", 4, 1], ["Babel", 4, 1], ["npm", 4, 1],
-    ["ES6", 4, 1], ["Typescript", 3, 1], ["Express.js", 3, 1], ["JSON", 4, 1],
-    ["MySQL", 4, 1], ["PostgreSQL", 4, 1], ["Scheme", 2, 1], ["Haskell", 1, 1],
-    ["OpenGL", 2, 1], ["WebGL", 3, 1], ["LaTeX", 5, 2], ["Android Studio", 3, 2],
-    ["IntelliJ IDEA", 4, 2], ["Matlab", 3, 2], ["Git", 5, 2], ["VSCode", 5, 2],
-    ["Atom", 5, 2],
-    ["Íslenska (Föðurtunga)", 5, 3], ["Enska (Móðurtunga)", 5, 3], ["Danska (Skóladanska)", 3, 3], ["Þýska (Ein bisschen)", 1, 3],
+    ["Java", 3, 1], ["C++", 3, 1], ["C", 2, 1], ["Python", 2, 1],
+    ["HTML5", 3, 1], ["CSS", 3, 1], ["SASS", 2, 1],
+    ["React", 3, 1], ["Node.js", 2, 1],
+    ["Typescript", 2, 1], ["Express.js", 2, 1], ["JSON", 3, 1],
+    ["MySQL", 2, 1], ["PostgreSQL", 2, 1], ["Haskell", 1, 1],
+    ["OpenGL", 1, 1], ["WebGL", 2, 1], ["LaTeX", 3, 2], ["Android Studio", 2, 2],
+    ["IntelliJ IDEA", 2, 2], ["Matlab", 2, 2], ["Git", 3, 2], ["VSCode", 3, 2],
+    ["Atom", 3, 2],
+    ["Íslenska (Föðurtunga)", 3, 3], ["Enska (Móðurtunga)", 3, 3], ["Danska (Skóladanska)", 2, 3], ["Þýska (Ein bisschen)", 1, 3],
   ];
 
   // A function to sort the knowledgeArray by rating so the highest rating is at the top
@@ -47,7 +47,7 @@ export default function KnowledgeList(props) {
             <KnowledgeContainer
               key={i}
               title={know[0]}
-              starAmount={know[1]}
+              ratingAmount={know[1]}
             />
           ))}
         </ul>
@@ -56,7 +56,7 @@ export default function KnowledgeList(props) {
             <KnowledgeContainer
               key={i+100}
               title={know[0]}
-              starAmount={know[1]}
+              ratingAmount={know[1]}
             />
           ))}
         </ul>
