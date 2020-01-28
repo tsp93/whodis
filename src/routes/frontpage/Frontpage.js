@@ -17,7 +17,7 @@ import breakout from '../../images/breakout.JPG';
 
 import './Frontpage.scss';
 
-// The frontpage where the resumé resides
+// The frontpage where the portfolio resides
 export default function Frontpage() {
 
   function getAge() {
@@ -34,10 +34,10 @@ export default function Frontpage() {
  
   return (
     <Fragment>
-      <Helmet title="Thomas Samúel Pálsson - Ferilskrá" />
+      <Helmet title="Thomas Samúel Pálsson - Portfolio" />
       <header className="frontpage-header">
         <h1>Thomas Samúel Pálsson <hr/></h1>
-        <h2>Ferilskrá</h2>
+        <h2>Portfolio</h2>
         <a href="#about" className="scroll-down" onClick={() => {(window.innerWidth <= 1200) ? configureAnchors({offset: -100, scrollDuration: 10}) : configureAnchors({offset: -20, scrollDuration: 10});}}>
           <span className={'arrow-down'}>
             <FaChevronDown />
