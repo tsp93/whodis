@@ -1,7 +1,6 @@
 @import '../../config.scss';
 
 .project {
-
   padding: 1rem;
   width: 100%;
 
@@ -18,30 +17,12 @@
     }
 
     & img {
+      opacity: 0.6;
       object-fit: cover;
       vertical-align: middle;
 
       height: 18rem;
-      width: 110%;
-
-      transform: translate3d(-20px,0,0);
-    }
-
-    & h2 {
-      opacity: 0;
-
-      transition: transform 0.35s;
-      transform: translate3d(-50px,0,0);
-    }
-
-    & p {
-      padding: 0.5em 2em;
-      opacity: 0;
-      transform: translate3d(50px,0,0);
-    }
-
-    & img, h2, p, hr {
-	    transition: opacity 0.35s, transform 0.35s;
+      width: 110%;      
     }
 
     & figcaption {
@@ -49,33 +30,63 @@
       position: absolute;
       top: 0;
 
+      width: 100%;
+
       & hr {
         margin: 0;
+        
+      }
+    }
+    
+    @media (min-width: $max-width) {
+
+      & img {
+        opacity: 1;
+        transform: translate3d(-20px,0,0);
+      }
+
+      & figcaption hr {
         opacity: 0;
 
         transform: translate3d(-10px,0,0);
       }
-    }
 
-    &:hover {
-      & img {
-        opacity: 0.6;
-        transform: translate3d(0,0,0);
+      & h2 {
+        opacity: 0;
+  
+        transition: transform 0.35s;
+        transform: translate3d(-50px,0,0);
       }
-
-      & h2, p, hr {
-        opacity: 1;
-        transform: translate3d(0,0,0);
+  
+      & p {
+        padding: 0.5em 1em;
+        opacity: 0;
+        transform: translate3d(50px,0,0);
       }
-
+  
       & img, h2, p, hr {
-        transition-delay: 0.15s;
+        transition: opacity 0.35s, transform 0.35s;
+      }
+
+      &:hover {
+        & img {
+          opacity: 0.6;
+          transform: translate3d(0,0,0);
+        }
+  
+        & h2, p, hr {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+  
+        & img, h2, p, hr {
+          transition-delay: 0.15s;
+        }
       }
     }
   }
 
   @media (min-width: $semi-max-width) {
-
     width: 50%;
   }
 }

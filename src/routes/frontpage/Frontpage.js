@@ -101,21 +101,21 @@ export default function Frontpage() {
               image={vefforritunarbudin}
               altText={'An online shopping system'}
               captionTitle={'Vefforritunarbúðin'}
-              caption={'Hópverkefni í vefforritun (Gæti tekið ca. mínútu að hlaðast inn)'}
+              caption={'Búð hönnuð í React og byggð ofan á bakenda í express.js'}
             />
             <ProjectContainer
               hyperref={'https://notendur.hi.is/~tsp3/tolvuleikjaforritun/PacSnake/'}
               image={pacalot}
               altText={'A hybrid between Pacman and Snake'}
               captionTitle={'PacSnake'}
-              caption={'Hópverkefni í tölvuleikjaforritun'}
+              caption={'Pacman og Snake blanda'}
             />
             <ProjectContainer
               hyperref={'https://notendur.hi.is/~tsp3/tolvuleikjaforritun/breakout/'}
               image={breakout}
               altText={'The classic game Breakout'}
               captionTitle={'Breakout'}
-              caption={'Einstaklingsverkefni í tölvuleikjaforritun'}
+              caption={'Klassíski leikurinn Breakout'}
             />
           </div>
         </ScrollableAnchor>
