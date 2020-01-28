@@ -19,7 +19,7 @@ export default function KnowledgeList(props) {
     ["Typescript", 2, 1], ["Express.js", 2, 1], ["JSON", 3, 1],
     ["MySQL", 2, 1], ["PostgreSQL", 2, 1], ["Haskell", 1, 1],
     ["OpenGL", 1, 1], ["WebGL", 2, 1], ["LaTeX", 3, 2], ["Android Studio", 2, 2],
-    ["IntelliJ IDEA", 2, 2], ["Matlab", 2, 2], ["Git", 3, 2], ["VSCode", 3, 2],
+    ["IntelliJ IDEA", 2, 2], ["Matlab", 1, 2], ["Git", 3, 2], ["VSCode", 3, 2],
     ["Atom", 3, 2],
     ["Íslenska (Föðurtunga)", 3, 3], ["Enska (Móðurtunga)", 3, 3], ["Danska (Skóladanska)", 2, 3], ["Þýska (Ein bisschen)", 1, 3],
   ];

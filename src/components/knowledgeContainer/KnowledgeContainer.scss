@@ -34,9 +34,14 @@
 
     width: 50%;
 
+    & .text {
+      opacity: 0.7;
+    }
+
     & .selected {
       font-size: 0.85rem;
       font-weight: bolder;
+      opacity: 1;
 
       margin: 0 -0.15rem;
     }
