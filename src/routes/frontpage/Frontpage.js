@@ -52,8 +52,9 @@ export default function Frontpage() {
           <div className="about">
             <h1>Um mig</h1>
               <p>Thomas Samúel Pálsson heiti ég, útskrifaður nemandi úr HÍ þar sem ég hlaut B.Sc. gráðu í hugbúnaðarverkfræði. 
-                Ég er {getAge()} ára að aldri, dugnaðardrengur, frábær, æðislegur og umfram allt hógvær. Áhugasamur um margs konar
-                forritun, jafnframt fram- og bakendaforritun, og tilbúinn í allt. Ég á það til að aðlagast nýjum hlutum frekar fljótt.</p>
+                Ég er {getAge()} ára að aldri, dugnaðarforkur og atorkusamur þegar kemur að vinnu. Áhugasamur um margs konar
+                forritun, jafnframt fram- og bakendaforritun, og tilbúinn í allt. Ég á það einnig til að aðlagast nýjum hlutum frekar fljótt.
+                Mín helstu áhugamál eru að sökka bæði í tölvuleikjum og skák.</p>
             <hr/>
           </div>
         </ScrollableAnchor>
