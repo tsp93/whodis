@@ -24,7 +24,7 @@ export default function NavBar(props) {
 
   // Makes the navigation bar fixed when below a certain point
   function handleScroll() {
-    if (window.scrollY > 920) {
+    if (window.scrollY > 875) {
       setSticky(true);
     } else {
       setSticky(false);
