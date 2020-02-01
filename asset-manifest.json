@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/whodis/static/css/main.70cad84e.chunk.css",
+    "main.css": "/whodis/static/css/main.80f67280.chunk.css",
     "main.js": "/whodis/static/js/main.0c575425.chunk.js",
     "main.js.map": "/whodis/static/js/main.0c575425.chunk.js.map",
     "runtime-main.js": "/whodis/static/js/runtime-main.9bbc8c1b.js",
@@ -8,9 +8,9 @@
     "static/js/2.b21ea324.chunk.js": "/whodis/static/js/2.b21ea324.chunk.js",
     "static/js/2.b21ea324.chunk.js.map": "/whodis/static/js/2.b21ea324.chunk.js.map",
     "index.html": "/whodis/index.html",
-    "precache-manifest.d491728d26ae7357955bcc7fec80e25e.js": "/whodis/precache-manifest.d491728d26ae7357955bcc7fec80e25e.js",
+    "precache-manifest.b33f118e5b7f84e7d69a67aec8c39b05.js": "/whodis/precache-manifest.b33f118e5b7f84e7d69a67aec8c39b05.js",
     "service-worker.js": "/whodis/service-worker.js",
-    "static/css/main.70cad84e.chunk.css.map": "/whodis/static/css/main.70cad84e.chunk.css.map",
+    "static/css/main.80f67280.chunk.css.map": "/whodis/static/css/main.80f67280.chunk.css.map",
     "static/js/2.b21ea324.chunk.js.LICENSE": "/whodis/static/js/2.b21ea324.chunk.js.LICENSE",
     "static/media/Pacalot.png": "/whodis/static/media/Pacalot.08f715c1.png",
     "static/media/breakout.JPG": "/whodis/static/media/breakout.52779cac.JPG",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.9bbc8c1b.js",
     "static/js/2.b21ea324.chunk.js",
-    "static/css/main.70cad84e.chunk.css",
+    "static/css/main.80f67280.chunk.css",
     "static/js/main.0c575425.chunk.js"
   ]
 }
