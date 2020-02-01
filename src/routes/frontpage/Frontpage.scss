@@ -116,7 +116,7 @@
 
   & .contact-details {
     margin: 2rem auto;
-    width: 30rem;
+    width: 80%;
 
     & .links {
       display: flex;
@@ -145,6 +145,9 @@
       & .github {
         font-size: 3rem;
       }
+    }
+    @media (min-width: $semi-max-width) {
+      width: 30%;
     }
   }
 }

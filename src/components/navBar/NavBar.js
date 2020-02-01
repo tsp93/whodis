@@ -24,10 +24,18 @@ export default function NavBar(props) {
 
   // Makes the navigation bar fixed when below a certain point
   function handleScroll() {
-    if (window.scrollY > 875) {
-      setSticky(true);
+    if (window.innerWidth >= 1200) {
+      if (window.scrollY > window.innerHeight - 96) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
     } else {
-      setSticky(false);
+      if (window.scrollY > window.innerHeight) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
     }
     handleHash();
   }
