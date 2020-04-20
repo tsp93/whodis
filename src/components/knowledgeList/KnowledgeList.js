@@ -13,8 +13,8 @@ export default function KnowledgeList(props) {
   // the 2nd a rating out of 5 pertaining to how confident I am with the stuff and 
   // the 3rd the category the stuff belongs to, f.x. 1 is programming knowledge and 3 language knowledge
   const knowledgeArray = [
-    ["Java", 3, 1], ["C++", 3, 1], ["C", 2, 1], ["Python", 2, 1],
-    ["HTML5", 3, 1], ["CSS", 3, 1], ["SASS", 2, 1],
+    ["Java", 3, 1], ["C++", 3, 1], ["C", 2, 1], ["C#", 2, 1], ["Python", 2, 1],
+    ["HTML5", 3, 1], ["CSS", 3, 1], ["SASS", 2, 1], [".NET Core", 2, 1],
     ["React", 3, 1], ["Node.js", 2, 1],
     ["Typescript", 2, 1], ["Express.js", 2, 1], ["JSON", 3, 1],
     ["MySQL", 2, 1], ["PostgreSQL", 2, 1], ["Haskell", 1, 1],
