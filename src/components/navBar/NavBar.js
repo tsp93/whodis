@@ -14,6 +14,7 @@ export default function NavBar(props) {
   const [hash, setHash] = useState('');
 
   useEffect(() => {
+    vhFix();
     window.addEventListener('scroll', handleScroll);
     window.addEventListener("hashchange", handleHash);
     return () => {
@@ -21,6 +22,15 @@ export default function NavBar(props) {
       window.removeEventListener("hashchange", handleHash);
     };
   })
+
+  function vhFix() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  }
 
   // Makes the navigation bar fixed when below a certain point
   function handleScroll() {
